@@ -1,0 +1,67 @@
+.statusCard {
+  --accent: #059669;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 24px;
+  padding: 18px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.24), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.72));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, white);
+  box-shadow: 0 12px 28px rgba(5, 150, 105, 0.16);
+}
+
+.statusCard.dark {
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 32%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.88), rgba(2, 12, 27, 0.94));
+  border-color: rgba(45, 212, 191, 0.22);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.38);
+}
+
+.iconWrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--accent) 20%, white);
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statusLabel {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.statusTitle {
+  margin: 0;
+  color: #111827;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.statusCard.dark .statusTitle,
+.statusCard.dark .description,
+.statusCard.dark .statusLabel {
+  color: #f8fafc;
+}
+
+.description {
+  margin: 0;
+  color: #526071;
+  font-size: 0.93rem;
+  line-height: 1.35;
+}

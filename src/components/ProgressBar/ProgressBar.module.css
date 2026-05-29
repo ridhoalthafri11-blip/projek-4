@@ -1,0 +1,116 @@
+.progressCard {
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.1);
+  border: 1px solid rgba(14, 116, 144, 0.12);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progressCard.dark {
+  background: rgba(2, 6, 23, 0.82);
+  border-color: rgba(16, 185, 129, 0.28);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.42);
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.kicker {
+  margin: 0 0 4px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #059669;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.title {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.progressCard.dark .title,
+.progressCard.dark .summary,
+.progressCard.dark .statLabel,
+.progressCard.dark .statValue {
+  color: #f8fafc;
+}
+
+.progressCard.dark .kicker {
+  color: #6ee7b7;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 7px 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.statBlock {
+  border-radius: 18px;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, #f8fafc, #f1f5f9);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progressCard.dark .statBlock {
+  background: linear-gradient(180deg, rgba(4, 47, 46, 0.78), rgba(7, 20, 38, 0.9));
+  border: 1px solid rgba(20, 184, 166, 0.18);
+}
+
+.statValue {
+  color: #0f172a;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.statLabel {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.track {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #d1fae5;
+}
+
+.fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #10b981, #fbbf24);
+  transition: width 0.35s ease;
+}
+
+.summary {
+  margin: 0;
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
